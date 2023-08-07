@@ -24,7 +24,9 @@ import {
     PrintService]
 })
 export class AppComponent implements OnInit {
+  // Replace the "localhost:44396" with the actual URL of your server
   public service = 'https://localhost:44396/pdfviewer';
+  //Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from google cloud storage bucket
   public document = 'PDF_Succinctly.pdf';
 
   ngOnInit(): void {
